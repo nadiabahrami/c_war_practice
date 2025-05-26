@@ -17,8 +17,17 @@ Given a two-dimensional array representation of a glass of mixed liquids, sort t
  ['H', 'H', 'O', 'O']         ['H','H','H','H']
  ]                           ]
  
+[                            [
+ ['A', 'H', 'W', 'O'],        ['O','O','O','O']
+ ['W', 'W', 'O', 'W'],  =>    ['A','W','W','W']
+ ['H', 'H', 'O', 'O']         ['W','H','H','H']
+ ]                           ]
+ 
+ input=[[]] output=[[]]
+ input=[['A', 'H', 'W', 'O'],['W', 'W', 'O', 'W'],['H', 'H', 'O', 'O']] output= [['O','O','O','O'],['A','W','W','W'],['W','H','H','H']]
+ input=[['A', 'H'],['W', 'O'],['W', 'W'],['H', 'H']] ouput=[['O', 'A'],['W', 'W'],['W', 'H],['H', 'H']]
 
-The glass representation may be larger or smaller. If a liquid doesn't fill a row, it floats to the top and to the left.
+ The glass representation may be larger or smaller. If a liquid doesn't fill a row, it floats to the top and to the left.
 """
 
 def separate_liquids(glass):
